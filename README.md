@@ -8,7 +8,7 @@ A complete MLOps pipeline for sentiment analysis using the Sentiment140 dataset,
 sentiment-analysis/
 ├── data/
 │   ├── raw/                # Raw data storage
-│   │   └── sentiment140.csv
+│   │   └── sentiment140.csv (download separately)
 │   └── processed/          # Processed data
 │       └── vectorizer.joblib
 ├── models/
@@ -56,6 +56,13 @@ sentiment-analysis/
 - Git
 - Heroku CLI (for Heroku deployment)
 
+### Dataset Download
+
+The Sentiment140 dataset is not included in this repository due to its large size. You need to download it separately:
+
+1. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/kazanova/sentiment140) or the [official website](http://help.sentiment140.com/for-students/)
+2. Place the CSV file in the `data/raw/` directory as `sentiment140.csv`
+
 ### Local Development
 
 1. Clone the repository:
@@ -64,19 +71,21 @@ sentiment-analysis/
    cd sentiment-analysis
    ```
 
-2. Create a virtual environment and install dependencies:
+2. Download the dataset as described above
+
+3. Create a virtual environment and install dependencies:
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    pip install -r requirements.txt
    ```
 
-3. Run the API locally:
+4. Run the API locally:
    ```bash
    python direct_api.py
    ```
 
-4. Test the API:
+5. Test the API:
    ```bash
    python test_direct_api.py
    ```
@@ -117,7 +126,7 @@ sentiment-analysis/
 
 4. Deploy using the heroku.yml configuration:
    ```bash
-   git push heroku master
+   git push heroku main
    ```
 
 5. Alternatively, deploy using the Container Registry:

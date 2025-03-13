@@ -59,4 +59,7 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
-.hypothesis/ 
+.hypothesis/
+
+# Large data files
+data/raw/sentiment140.csv 

@@ -21,6 +21,7 @@ prometheus-client==0.17.1
 
 # Testing
 pytest==7.4.2
+pytest-cov==6.0.0
 httpx==0.25.0
 
 # Deployment

@@ -2,6 +2,10 @@
 
 A complete MLOps pipeline for sentiment analysis using the Sentiment140 dataset, with a FastAPI service, Docker containerization, CI/CD with GitHub Actions, and deployment to Heroku.
 
+## Project Report
+
+For a comprehensive explanation of the project, including architecture details, implementation specifics, CI/CD pipeline, challenges, and future work, please refer to our [detailed project report](PROJECT_REPORT.md).
+
 ## Project Structure
 
 ```
